@@ -1,0 +1,328 @@
+@import 'tailwindcss';
+@source "../app/**/*.{ts,tsx,js,jsx}";
+@source "../components/**/*.{ts,tsx,js,jsx}";
+@source "../views/**/*.{ts,tsx,js,jsx}";
+@source "../hooks/**/*.{ts,tsx,js,jsx}";
+@source "../shared/**/*.{ts,tsx,js,jsx}";
+@source "../utils/**/*.{ts,tsx,js,jsx}";
+@source "../lib/**/*.{ts,tsx,js,jsx}";
+
+@custom-variant dark (&:is(.dark *));
+
+@layer base {
+  :root {
+  --background: hsl(0 0% 100%);
+  --foreground: hsl(240 10% 3.9%);
+  --card: hsl(0 0% 100%);
+  --card-foreground: hsl(240 10% 3.9%);
+  --popover: hsl(0 0% 100%);
+  --popover-foreground: hsl(240 10% 3.9%);
+  --primary: hsl(240 5.9% 10%);
+  --primary-foreground: hsl(0 0% 98%);
+  --secondary: hsl(240 4.8% 95.9%);
+  --secondary-foreground: hsl(240 5.9% 10%);
+  --muted: hsl(240 4.8% 95.9%);
+  --muted-foreground: hsl(240 3.8% 46.1%);
+  --accent: hsl(240 4.8% 95.9%);
+  --accent-foreground: hsl(240 5.9% 10%);
+  --destructive: hsl(0 84.2% 60.2%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(240 5.9% 90%);
+  --input: hsl(240 5.9% 90%);
+  --ring: hsl(240 5.9% 10%);
+  --radius: 0.5rem;
+  --chart-1: hsl(12 76% 61%);
+  --chart-2: hsl(173 58% 39%);
+  --chart-3: hsl(197 37% 24%);
+  --chart-4: hsl(43 74% 66%);
+  --chart-5: hsl(27 87% 67%);
+  --sidebar: hsl(0 0% 98%);
+  --sidebar-foreground: hsl(240 5.3% 26.1%);
+  --sidebar-primary: hsl(240 5.9% 10%);
+  --sidebar-primary-foreground: hsl(0 0% 98%);
+  --sidebar-accent: hsl(240 4.8% 95.9%);
+  --sidebar-accent-foreground: hsl(240 5.9% 10%);
+  --sidebar-border: hsl(220 13% 91%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+}
+
+@layer base {
+  .dark {
+  --background: hsl(240 10% 3.9%);
+  --foreground: hsl(0 0% 98%);
+  --card: hsl(240 10% 3.9%);
+  --card-foreground: hsl(0 0% 98%);
+  --popover: hsl(240 10% 3.9%);
+  --popover-foreground: hsl(0 0% 98%);
+  --primary: hsl(0 0% 98%);
+  --primary-foreground: hsl(240 5.9% 10%);
+  --secondary: hsl(240 3.7% 15.9%);
+  --secondary-foreground: hsl(0 0% 98%);
+  --muted: hsl(240 3.7% 15.9%);
+  --muted-foreground: hsl(240 5% 64.9%);
+  --accent: hsl(240 3.7% 15.9%);
+  --accent-foreground: hsl(0 0% 98%);
+  --destructive: hsl(0 62.8% 30.6%);
+  --destructive-foreground: hsl(0 0% 98%);
+  --border: hsl(240 3.7% 15.9%);
+  --input: hsl(240 3.7% 15.9%);
+  --ring: hsl(240 4.9% 83.9%);
+  --chart-1: hsl(220 70% 50%);
+  --chart-2: hsl(160 60% 45%);
+  --chart-3: hsl(30 80% 55%);
+  --chart-4: hsl(280 65% 60%);
+  --chart-5: hsl(340 75% 55%);
+  --sidebar: hsl(240 5.9% 10%);
+  --sidebar-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-primary: hsl(224.3 76.3% 48%);
+  --sidebar-primary-foreground: hsl(0 0% 100%);
+  --sidebar-accent: hsl(240 3.7% 15.9%);
+  --sidebar-accent-foreground: hsl(240 4.8% 95.9%);
+  --sidebar-border: hsl(240 3.7% 15.9%);
+  --sidebar-ring: hsl(217.2 91.2% 59.8%);
+}
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Prevent flash on initial load - sections start hidden and transition smoothly */
+  section {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+  }
+  
+  section.visible {
+    opacity: 1;
+  }
+  
+  /* Hero section should always be visible */
+  section:first-of-type {
+    opacity: 1;
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 1s ease-out forwards;
+  }
+  
+  .animate-fade-in-delay {
+    animation: fade-in 1s ease-out 0.3s forwards;
+    opacity: 0;
+  }
+  
+  .animate-fade-in-delay-2 {
+    animation: fade-in 1s ease-out 0.6s forwards;
+    opacity: 0;
+  }
+  
+  /* VHS Effects with Blue-Grey Dreamlike Aesthetic */
+  @keyframes vhs-flicker-soft {
+    0%, 100% {
+      opacity: 0.96;
+      text-shadow: 2px 0 0 rgba(59, 130, 246, 0.2), -2px 0 0 rgba(147, 197, 253, 0.2);
+    }
+    50% {
+      opacity: 1;
+      text-shadow: 2px 0 0 rgba(59, 130, 246, 0.25), -2px 0 0 rgba(147, 197, 253, 0.25);
+    }
+  }
+  
+  .vhs-flicker-soft {
+    animation: vhs-flicker-soft 0.4s infinite;
+  }
+  
+  @keyframes vhs-distort {
+    0%, 100% {
+      transform: scale(1) translateX(0);
+    }
+    50% {
+      transform: scale(1.001) translateX(0.5px);
+    }
+  }
+  
+  .vhs-distort {
+    animation: vhs-distort 10s infinite;
+    filter: contrast(1.05) saturate(0.8) brightness(0.95);
+  }
+  
+  .dreamlike-filter {
+    filter: contrast(1.1) saturate(0.7) brightness(0.9) hue-rotate(-5deg);
+  }
+  
+  .hero-image-saturated {
+    filter: saturate(1.3);
+  }
+  
+  @keyframes grain {
+    0%, 100% { opacity: 0.15; }
+    50% { opacity: 0.25; }
+  }
+  
+  .vhs-grain {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='6.29' numOctaves='6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+    animation: grain 0.9s steps(10) infinite;
+  }
+  
+  .scan-lines {
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.1),
+      rgba(0, 0, 0, 0.1) 1px,
+      transparent 1px,
+      transparent 2px
+    );
+  }
+  
+  @keyframes tracking {
+    0% { transform: translateY(-2px); }
+    100% { transform: translateY(2px); }
+  }
+  
+  .vhs-tracking {
+    animation: tracking 0.9s ease-in-out infinite alternate;
+  }
+  
+  .vhs-timestamp {
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+  }
+  
+  .dreamlike-glow {
+    filter: drop-shadow(0 0 25px rgba(96, 165, 250, 0.25)) drop-shadow(0 0 50px rgba(148, 163, 184, 0.15));
+  }
+  
+  .dreamlike-button {
+    transition: all 0.2s ease;
+    text-shadow: 0 0 12px rgba(147, 197, 253, 0.3);
+    backdrop-filter: blur(4px);
+  }
+  
+  .dreamlike-button:hover {
+    text-shadow: 0 0 18px rgba(147, 197, 253, 0.5);
+    backdrop-filter: blur(6px);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  /* Prevent Instagram in-app browser scroll issues */
+  overscroll-behavior: none;
+  -webkit-overflow-scrolling: touch;
+  /* Fixed height - do not respond to viewport changes */
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Fix for Instagram in-app browser on iOS */
+body {
+  overscroll-behavior: none;
+  touch-action: pan-y;
+  -webkit-touch-callout: none;
+  /* Fixed height - do not respond to viewport changes */
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+#root {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Mobile viewport fix for iOS Safari and Android Chrome */
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+}
+
+/* 
+  Note: We intentionally do NOT use dvh (dynamic viewport height) here.
+  dvh causes the layout to shift when Instagram's bottom bar appears/disappears.
+  Using static vh keeps the layout stable.
+*/
+
+:root {
+  font-family: 'Courier Prime', monospace;
+}
+
+body {
+  background: #020617;
+  color: #cbd5e1;
+  /* Ensure body takes full height for proper scrolling */
+  min-height: 100%;
+  min-height: -webkit-fill-available;
+}
