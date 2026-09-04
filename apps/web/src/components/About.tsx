@@ -50,10 +50,7 @@ export default function About() {
                 Zorker Torker project, as well as soundtracks for games I've worked on.
               </p>
               <p>
-                I explore the world of deepest dreams that leads me into places with music i've
-                never heared before. Creating music is always exploration of unknown which can be
-                the happiest, nostalgic and the scariest experience at the same time. So i would
-                like to share it with you!
+                
               </p>
               <p>
                 If you need music for your game or movie, feel free to get in touch via email! Let's
