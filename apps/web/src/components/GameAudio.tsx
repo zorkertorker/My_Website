@@ -23,7 +23,7 @@ const videos = [
 export default function GameAudio() {
   // currentIndex tracks which video is shown in the mobile carousel
   // Starts at 0 (first video)
-  const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(1);
 
   // Go to the previous video — wraps around to the last video if at the start
   const goToPrevious = () => {
