@@ -66,6 +66,13 @@ const videoGameTracks = [
       'https://bandcamp.com/EmbeddedPlayer/track=655034419/size=large/bgcol=333333/linkcol=346c97/tracklist=false/artwork=small/transparent=true/',
     link: 'https://zorkertorker.bandcamp.com/track/main-theme-casual',
   },
+  {
+    title: 'Theory of Everything',
+    artist: 'Zorker Torker',
+    embedUrl:
+      'https://bandcamp.com/EmbeddedPlayer/album=3162160537/size=large/bgcol=1c1c1a/linkcol=346c97/tracklist=false/artwork=small/transparent=true/',
+    link: 'https://zorkertorker.bandcamp.com/album/theory-of-everything',
+  },
 ];
 
 // ── ZORKER TORKER TAB: Track list ──
