@@ -4,7 +4,7 @@ import './global.css';
 import { Providers } from './providers';
 
 export const metadata: Metadata = {
-  title: 'Anything App',
+  title: 'Zorker-Torker',
   description: 'Created with Anything',
   icons: {
     icon: '/favicon.png',
