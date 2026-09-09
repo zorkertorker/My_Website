@@ -235,7 +235,7 @@ export default function Hero() {
       {/* Bouncing arrow at the bottom — calls scrollToAbout() when clicked */}
       <button
         onClick={scrollToAbout}
-        className="absolute bottom-20 sm:bottom-8 left-[46%] sm:left-1/2 -translate-x-1/2 text-blue-200/60 animate-bounce cursor-pointer hover:text-blue-200/80 transition-colors flex justify-center"
+        className="absolute bottom-20 sm:bottom-8 left-[50%] sm:left-1/2 -translate-x-1/2 text-blue-200/60 animate-bounce cursor-pointer hover:text-blue-200/80 transition-colors flex justify-center"
         aria-label="Scroll to about section"
       >
         <ChevronDown className="w-16 h-16 md:w-14 md:h-14" />
