@@ -131,7 +131,7 @@ export default function GameAudio() {
               <div className="aspect-[9/16] w-full max-w-[240px] mx-auto">
                 <iframe
                   className="w-full h-full"
-                  src="https://www.youtube.com/embed/nHGrbW6e64o?si=2Y2CP22bvFfFz4TB"
+                  src="https://youtube.com/shorts/XhAna73UGvQ?si=VNmVf-9AqBSK3C0C"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
