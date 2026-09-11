@@ -5,7 +5,7 @@ import { Providers } from './providers';
 
 export const metadata: Metadata = {
   title: 'Zorker-Torker',
-  description: 'Created with Anything',
+  description: 'Composer',
   icons: {
     icon: '/favicon.png',
   },
