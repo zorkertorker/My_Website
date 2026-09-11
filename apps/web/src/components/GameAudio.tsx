@@ -15,7 +15,7 @@ import { Video, ChevronLeft, ChevronRight } from 'lucide-react'; // Icons for th
 // isShort: true = uses a 9:16 vertical aspect ratio (YouTube Shorts format)
 const videos = [
   { id: '_82ukLFoN9o', title: 'Video 1', isShort: false },
-  { id: 'XhAna73UGvQ', title: 'Video 2', isShort: true }, // Vertical short
+  { id: '', title: 'Video 2', isShort: true }, // Vertical short
   { id: 'Bgkl7DMhVWk', title: 'Video 3', isShort: false },
   { id: 'baDqMMsehW8', title: 'Video 4', isShort: false },
 ];
